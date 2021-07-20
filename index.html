@@ -15,7 +15,7 @@
 <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
         <nav>
-            <img id="mobile-exit" class="mobile-menu-exit" src="exit.png" alt="Close Navigation">
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
             <ul class="primary-nav">
                 <li class="current"><a href="#">Home</a></li>
                 <li><a href="#">Features</a></li>
@@ -24,7 +24,7 @@
 
             <ul class="secondary-nav">
                 <li><a href="#">Contact</a></li>
-                <li class="go-premium-ca"><a href="#">Go Premium</a></li>
+                <li class="go-premium-cta"><a href="#">Go Premium</a></li>
             </ul>
         </nav>
     </div>
@@ -47,7 +47,7 @@
     </div>
 </section>
 
-<section class="feature-section">
+<section class="features-section">
 <div class="container">
     <ul class="features-list">
         <li>Unlimited Tasks</li>
@@ -57,8 +57,7 @@
         <li>Real Time Collaboration</li>
         <li>Other awesome  features</li>
     </ul>
-
-    <img src="" alt="man holding phone">
+     <img src="images/holding-phone.jpg" alt="man holding phone">
 </div>
 
 </section>
@@ -67,7 +66,7 @@
 <div class="container">
     <ul>
         <li>
-            <img src="" alt="person1">
+            <img src="images/person.jpg" alt="person1">
             <blockquote>
                 "my name is mohannad im 24 years old im graduated from bcs mobile computing and networking"
             </blockquote>
@@ -75,7 +74,7 @@
         </li>
 
         <li>
-            <img src="" alt="person1">
+            <img src="images/person.jpg" alt="person1">
             <blockquote>
                 "my name is mohannad im 24 years old im graduated from bcs mobile computing and networking"
             </blockquote>
@@ -83,7 +82,7 @@
         </li>
 
         <li>
-            <img src="" alt="person1">
+            <img src="images/person.jpg" alt="person1">
             <blockquote>
                 "my name is mohannad im 24 years old im graduated from bcs mobile computing and networking"
             </blockquote>
@@ -113,5 +112,21 @@
     </div>
 </section>
 
+
+<script>
+
+    const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav')
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+          mobileBtn.addEventListener('click', () =>{
+              nav.classList.add('menu-btn');
+          })  
+
+
+          mobileBtnExit.addEventListener('click', () =>{
+              nav.classList.remove('menu-btn');
+          })  
+</script>
 </body>
 </html>
